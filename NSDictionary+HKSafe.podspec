@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "宋鸿康"
+  s.name         = "NSDictionary+HKSafe"
   s.version      = "0.0.1"
-  s.summary      = "A short description of NSDictionary+HKSafe."
+  s.summary      = "当nsdictionary写入的时候遇到nil，不会奔溃"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    字典遇到nil，替换成@“”
-                   DESC
+                    解决当nsdictionary写入nil，不会奔溃，而是替换
+                    DESC
 
   s.homepage     = "https://github.com/songhongkang/NSDictionary-HKSafe.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "NSDictionary+HKSafe/*"
+  s.exclude_files = "NSDictionary+HKSafe/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
